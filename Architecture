@@ -27,3 +27,22 @@
 ## Reward Function
 
 Not external. Derived from homeostatic gradient:
+
+reward = Σ(w_i * Δhomeostasis_i / Δt)
+
+
+Agent maximizes **rate of homeostatic improvement**.
+
+## Cognitive Engine (v1)
+
+- **Policy**: PPO or SAC
+- **State**: [energy, safety, info, social] + sensory input
+- **Action**: discrete or continuous action space
+- **Memory**: none (v1), then RNN/Transformer
+
+## Future Extensions
+
+- **Episodic memory**: "Where did I find food before?"
+- **World model**: Predict environment dynamics
+- **Meta-learning**: Adapt drives themselves
+- **Multi-agent**: Social dynamics, culture
