@@ -114,6 +114,7 @@ Contact
 📧 Email: leshrakfm@gmail.com
 💬 Telegram: @masterg6
 Project Link: https://github.com/KZ7M/substrate
+```
 <p align="center">
   <sub>🇷🇺 <b>Substrate</b> — исследовательский проект по эмбодиментному познанию. Агенты с гомеостатическими драйвами (энергия, безопасность, любопытство) и наблюдение за эмерджентным поведением. Попытка создать минимальный субстрат для цифровой жизни.</sub>
 </p>
