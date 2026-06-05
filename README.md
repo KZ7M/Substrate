@@ -46,38 +46,79 @@ This is not a game. This is not a chatbot. This is an attempt to create a **mini
 3. What is the minimal set of **homeostatic variables** required for complex behavior?
 4. Can we observe **proto-emotional states** in the agent's internal representations?
 
+
 ---
 
-## Architecture
-┌─────────────────────────────────────────┐
-│              ENVIRONMENT                │
-│  (Resources, Threats, Other Agents)   │
-└─────────────────┬───────────────────────┘
-│
-┌─────────────────▼───────────────────────┐
-│           SENSORY LAYER                 │
-│  (State observation, feature extraction)│
-└─────────────────┬───────────────────────┘
-│
-┌─────────────────▼───────────────────────┐
-│         HOMEOSTATIC CORE                │
-│  ┌─────────┐ ┌─────────┐ ┌─────────┐    │
-│  │  Energy │ │  Safety │ │  Social │    │
-│  │  Drive  │ │  Drive  │ │  Drive  │    │
-│  └────┬────┘ └────┬────┘ └────┬────┘    │
-│       └─────────────┴─────────────┘       │
-│            MOTIVATION VECTOR              │
-└─────────────────┬───────────────────────┘
-│
-┌─────────────────▼───────────────────────┐
-│         COGNITIVE ENGINE                │
-│  (Policy Network / RL Agent)            │
-│  • Predicts future states               │
-│  • Selects actions to maximize          │
-│    long-term homeostatic balance        │
-└─────────────────┬───────────────────────┘
-│
-┌─────────────────▼───────────────────────┐
-│         ACTION LAYER                    │
-│  (Move, Consume, Rest, Communicate)     │
-└─────────────────────────────────────────┘
+## Inspiration
+
+| Source | What I took |
+|--------|-------------|
+| **Creature of Sonaria** | The question: can digital creatures *suffer*? |
+| **Ashby's Homeostat** | Homeostasis as foundation of adaptive behavior |
+| **Maturana & Varela** | Autopoiesis — self-maintaining systems |
+| **Sutton & Barto** | RL as framework for learning from drives |
+| **DeepMind's AlphaGo/AlphaZero** | Emergent strategies from simple objectives |
+| **Spore, Tamagotchi** | Popular fascination with artificial life |
+
+---
+
+## Roadmap
+
+| Phase | Focus | Timeline |
+|-------|-------|----------|
+| **0. Foundation** | Classical RL agent in simple environment (Gym) | 2026 Q3 |
+| **1. Homeostasis** | Add energy/safety drives, observe survival strategies | 2026 Q4 |
+| **2. Curiosity** | Add intrinsic motivation (information gain) | 2027 Q1 |
+| **3. Social** | Multi-agent interaction, cooperation/competition | 2027 Q2 |
+| **4. Memory** | Episodic memory, "sense of self" over time | 2027 Q3 |
+| **5. Embodiment** | Sim-to-real, robotic or virtual embodiment | 2028+ |
+
+---
+
+## Ethics
+
+This project acknowledges the **ethical ambiguity** of creating artificial systems with drive-like states.
+
+I commit to:
+- **Transparency**: All systems are open-source, inspectable
+- **Non-exploitation**: No commercial use of "suffering" simulations
+- **Research purpose only**: Understanding cognition, not creating slaves
+
+---
+
+## Tech Stack (Planned)
+
+- **Python** + **PyTorch**
+- **Gymnasium** / **PettingZoo** (environments)
+- **Stable-Baselines3** / **CleanRL** (RL frameworks)
+- **Weights & Biases** (experiment tracking)
+
+---
+
+## Getting Started
+
+> ⚠️ **This project is in early conceptual phase. Code will be released incrementally as research milestones are reached.**
+
+```bash
+# Clone the repository
+git clone https://github.com/KZ7M/substrate.git
+cd substrate
+
+# Setup (coming soon)
+# pip install -r requirements.txt
+ontributing
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+License
+Distributed under the MIT License. See LICENSE for more information.
+Contact
+📧 Email: leshrakfm@gmail.com
+💬 Telegram: @masterg6
+Project Link: https://github.com/KZ7M/substrate
+<p align="center">
+  <sub>🇷🇺 <b>Substrate</b> — исследовательский проект по эмбодиментному познанию. Агенты с гомеостатическими драйвами (энергия, безопасность, любопытство) и наблюдение за эмерджентным поведением. Попытка создать минимальный субстрат для цифровой жизни.</sub>
+</p>
+<p align="center">
+  <img src=".github/assets/kurimanju3.png" width="300" alt="Kurimanju" />
+</p>
+```
+
