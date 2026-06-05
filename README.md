@@ -49,3 +49,35 @@ This is not a game. This is not a chatbot. This is an attempt to create a **mini
 ---
 
 ## Architecture
+┌─────────────────────────────────────────┐
+│              ENVIRONMENT                │
+│  (Resources, Threats, Other Agents)   │
+└─────────────────┬───────────────────────┘
+│
+┌─────────────────▼───────────────────────┐
+│           SENSORY LAYER                 │
+│  (State observation, feature extraction)│
+└─────────────────┬───────────────────────┘
+│
+┌─────────────────▼───────────────────────┐
+│         HOMEOSTATIC CORE                │
+│  ┌─────────┐ ┌─────────┐ ┌─────────┐    │
+│  │  Energy │ │  Safety │ │  Social │    │
+│  │  Drive  │ │  Drive  │ │  Drive  │    │
+│  └────┬────┘ └────┬────┘ └────┬────┘    │
+│       └─────────────┴─────────────┘       │
+│            MOTIVATION VECTOR              │
+└─────────────────┬───────────────────────┘
+│
+┌─────────────────▼───────────────────────┐
+│         COGNITIVE ENGINE                │
+│  (Policy Network / RL Agent)            │
+│  • Predicts future states               │
+│  • Selects actions to maximize          │
+│    long-term homeostatic balance        │
+└─────────────────┬───────────────────────┘
+│
+┌─────────────────▼───────────────────────┐
+│         ACTION LAYER                    │
+│  (Move, Consume, Rest, Communicate)     │
+└─────────────────────────────────────────┘
