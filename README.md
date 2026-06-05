@@ -1,6 +1,4 @@
-<p align="center">
-  <img src=".github/assets/kurimanju1.png" width="200" alt="Substrate logo" />
-</p>
+
 
 <h1 align="center">Substrate</h1>
 
